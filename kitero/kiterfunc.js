@@ -20,10 +20,10 @@ StudentWithWork.prototype.doWork = function() {
 Object.setPrototypeOf(StudentWithWork.prototype, Student.prototype);
 
 
-const stu1 = new Student('Dorka');
-const stu2 = new Student('Földvári');
-const stu3 = new StudentWithWork('Pikachu');
-const stu4 = new StudentWithWork('Halelas');
+const stu1 = new Student('kaki');
+const stu2 = new Student('fing');
+const stu3 = new StudentWithWork('gyrados');
+const stu4 = new StudentWithWork('paella');
 
 console.log(stu1);
 console.log(stu2);

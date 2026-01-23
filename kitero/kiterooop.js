@@ -9,7 +9,7 @@ class Student {
     }
 }
 
-const stu1 = new Student('Dorka');
+const stu1 = new Student('toji-kun');
 stu1.askedQuestion();
 console.log(stu1);
 
