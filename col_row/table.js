@@ -1,0 +1,53 @@
+
+/**
+ * @import {FormFieldType,HeaderArrayType,ColspanType,RowspanType} from "./functions.js";
+ */
+
+import { Manager } from "./manager.js"
+
+ 
+
+class Table{
+
+    /**
+     * @type {HTMLTableSectionElement}
+     */
+    #tbody
+
+    /**
+     * @type {Manager}
+     */
+    #manager
+
+    /**
+     * 
+     * @param {HeaderArrayType} HeaderArray 
+     * @param {Manager} manager 
+     */
+    constructor(HeaderArray, manager){
+
+        const table = document.createElement('table')
+        document.body.appendChild(table)
+
+        const thead = document.createElement('thead')
+        table.appendChild(thead)
+
+        const tr = document.createElement('tr')
+        thead.body.appendChild(tr)
+
+        for(let e of HeaderArray){
+            const th = document.createElement('th')
+
+            th.colspan= e.Colspan
+            th.innerText =  
+            tr.appendChild(th)
+        }
+
+        const tbody = document.createElement('tbody')
+        this.#tbody = tbody
+        table.appendChild(this.#tbody)
+
+    }
+}
+
+export {Table}
